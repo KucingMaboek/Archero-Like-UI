@@ -6,7 +6,7 @@ public class NavigationBarController : MonoBehaviour
     /*
      * Sorry for unreadable code,
      * never code for UI animation before,
-     * and the time is not enough to learn it first :(
+     * and the time is not enough to clean this mess :(
      *
      * Notes : will revised it soon
      */
