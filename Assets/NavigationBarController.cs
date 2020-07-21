@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 
 public class NavigationBarController : MonoBehaviour
@@ -15,6 +16,7 @@ public class NavigationBarController : MonoBehaviour
     private float _rectWidth;
     private float _itemWidth;
     private int _currentMenu;
+    public RectTransform panel;
     [SerializeField] private float animationDelay = 0.05f;
 
 
@@ -62,6 +64,8 @@ public class NavigationBarController : MonoBehaviour
                     itemRect.offsetMax = new Vector2(-right, 0);
                     right -= (_itemWidth);
                 }
+    
+                panel.DOAnchorPosX(-(i*720), 1f, true);
             }
             // Set next menu size as normal size
             else
